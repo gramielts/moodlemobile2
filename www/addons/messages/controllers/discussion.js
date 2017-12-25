@@ -632,4 +632,3 @@ angular.module('mm.addons.messages')
     });
 
 });
-
