@@ -74,6 +74,13 @@ angular.module('mm.core.login')
                     $mmLoginHelper.confirmAndOpenBrowserForSSOLogin(
                                 result.siteurl, result.code, result.service, result.config && result.config.launchurl);
                 } else {
+                    //By santhosh on 21 Feb 2018
+                    //Inorder to disable back button on login page
+                    $ionicHistory.nextViewOptions({
+                        disableAnimate: true,
+                        disableBack: true
+                    });
+                    //Ends
                     $state.go('mm_login.credentials', {siteurl: result.siteurl, siteconfig: result.config});
                 }
             }, function(error) {
@@ -130,4 +137,8 @@ angular.module('mm.core.login')
         });
     });
 
+    //By santhosh on 21 Feb 2018
+    //To connect to site automatically
+    $scope.connect("gramielts.com");
+    //Ends
 });

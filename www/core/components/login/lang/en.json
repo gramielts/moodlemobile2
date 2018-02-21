@@ -5,7 +5,7 @@
     "checksiteversion": "Check that your site uses Moodle 2.4 or later.",
     "confirmdeletesite": "Are you sure you want to delete the site {{sitename}}?",
     "connect": "Connect!",
-    "connecttomoodle": "Connect to Moodle",
+    "connecttomoodle": "Connect to Gramielts",
     "contactyouradministrator": "Contact your site administrator for further help.",
     "contactyouradministratorissue": "Please ask your site administrator to check the following issue: {{$a}}",
     "createaccount": "Create my new account",
